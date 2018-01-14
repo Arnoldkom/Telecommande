@@ -5,11 +5,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.RechercheControleur">
    <children>
       <Label layoutX="204.0" layoutY="21.0" prefHeight="32.0" prefWidth="291.0" text=" Recherche telecommande " textFill="#4f94c6">
          <font>
@@ -27,5 +28,23 @@
             <TableColumn fx:id="col_notice" prefWidth="273.0" text="notice" />
          </columns>
       </TableView>
+      <JFXButton fx:id="btn_close" layoutX="599.0" layoutY="4.0" onAction="#Close" prefHeight="25.0" prefWidth="39.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Delete_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_reduire" layoutX="550.0" layoutY="5.0" onAction="#Reduire" text=" ">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Menu_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

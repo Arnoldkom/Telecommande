@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.AccueilControleur">
+   <children>
+      <Label layoutX="140.0" layoutY="40.0" prefHeight="33.0" prefWidth="300.0" text="Gestion des telecommandes ">
+         <font>
+            <Font name="Arial Unicode MS" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_recherche" layoutX="245.0" layoutY="114.0" onAction="#Recherche" prefHeight="71.0" prefWidth="120.0" style="-fx-background-color: #CCFFFF;" text="Recherche">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Search_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_mail" layoutX="418.0" layoutY="114.0" onAction="#Mail" prefHeight="71.0" prefWidth="102.0" style="-fx-background-color: #CCFFFF;" text="Mail">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Mail_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_save" layoutX="48.0" layoutY="114.0" onAction="#Save" prefHeight="71.0" prefWidth="127.0" style="-fx-background-color: #CCFFFF;" text="Enregistrement">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Save_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_edition" layoutX="48.0" layoutY="227.0" onAction="#Edition" prefHeight="71.0" prefWidth="127.0" style="-fx-background-color: #CCFFFF;" text="Edition">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Map%20Editing_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_vente" layoutX="418.0" layoutY="227.0" onAction="#Vente" prefHeight="71.0" prefWidth="102.0" style="-fx-background-color: #CCFFFF;" text="vente">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Shopping%20Cart_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_stock" layoutX="245.0" layoutY="234.0" onAction="#Stock" prefHeight="71.0" prefWidth="120.0" style="-fx-background-color: #CCFFFF;" text="Stock">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Move%20Stock_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_close" layoutX="549.0" layoutY="1.0" onAction="#Close" prefHeight="25.0" prefWidth="39.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Delete_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_reduire" layoutX="500.0" layoutY="2.0" onAction="#Reduire" text=" ">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Menu_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>
